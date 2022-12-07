@@ -122,6 +122,9 @@ a{
     display: none;
 }
 
+.nav-der-container ul li a i{
+    padding-left: 8px;
+}
 
 /*PRODUCTOS*/
 
