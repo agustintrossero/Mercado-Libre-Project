@@ -258,13 +258,30 @@ footer {
     width: 100%;
 }
 
-.top-form, .mid-form{
+.top-form, .mid-form, .password-container{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
     width: 100%;
+}
+
+.top-form input, .mid-form input,  .password-container input{
+    width: 80%;
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 1.8125em 0.75em;
+    padding-top: 0.8125em;
+    padding-right: 0.75em;
+    padding-bottom: 0.8125em;
+    padding-left: 0.75em;
 }
 
 .categoria_intereses{
@@ -282,8 +299,17 @@ footer {
     width: 100%;
 }
 
+h4{
+    padding: 20px 0px 5px 35px;
+}
+
+.label-box, .user-type{
+    padding-left: 40px;
+}
+
 .categoria-box{
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 
@@ -295,7 +321,21 @@ footer {
 #show-label{
     visibility: visible;
 }
+.space{
+    padding-right: 20px;
+}
 
+.buttons-form button{
+    width: 100%;
+    padding: 0.5em 4.1em;
+    background-color: #2968c8;
+    border: transparent;
+    color: #fff;
+}
+
+.reset-button{
+    margin-top: 20px;
+}
 
 
 @media (min-width: 361px){
