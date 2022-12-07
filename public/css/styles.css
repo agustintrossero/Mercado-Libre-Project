@@ -249,7 +249,46 @@ footer {
 
 /* REGISTER */
 
-.register-form label {
+.register-form{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.top-form, .mid-form{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.categoria_intereses{
+    width: 100%;
+    display: flex;
+}
+
+.label-box, .categoria-box{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+}
+
+.user-type-container, h4{
+    width: 100%;
+}
+
+.categoria-box{
+    justify-content: space-between;
+}
+
+
+
+.register-form label , .login-form label {
     visibility: hidden;
 }
 

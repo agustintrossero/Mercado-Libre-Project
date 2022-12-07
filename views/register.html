@@ -37,7 +37,7 @@
             <div class="nav-der-container">
                 <ul class="nav-der">
                     <li><a href="/register">Crea tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
-                    <li><a href="">Ingresa <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                    <li><a href="/login">Ingresa <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i></a></li>
                     <li><a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>       
                 </ul>  
             </div>
@@ -46,8 +46,6 @@
             <button class="burger"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
-    <h2>REGISTER</h2>
-
     <div class="register-form-container">
         <form action="/" method="GET" class="register-form">
             <div class="top-form">
@@ -70,17 +68,20 @@
                 <label for="adress">Domicilio</label>
             </div>
 
-            <h4>Perfil del usuario</h4>
-            <div class="user-type">             
-                <input type="radio" name="option" value="Comprador">
-                <label for="option" id="show-label">Comprador</label>
+            <div class="user-type-container">             
+                <h4>Perfil del usuario</h4>
+                <div class="user-type">
+                    <input type="radio" name="option" value="Comprador">
+                    <label for="option" id="show-label">Comprador</label>
 
-                <input type="radio" name="option" value="Vendedor">
-                <label for="option" id="show-label">Vendedor</label>
+                    <input type="radio" name="option" value="Vendedor">
+                    <label for="option" id="show-label">Vendedor</label>
+                </div>
             </div>
 
             <h4>Intereses</h4>
-                <div class="categoria_intereses">
+            <div class="categoria_intereses">
+                
                     <div class="label-box">
                         <label for="electro" id="show-label">Electro</label>
                         <label for="moda" id="show-label">Moda</label>
@@ -89,12 +90,13 @@
                         <label for="vida_sana" id="show-label">Vida Sana</label>
                     </div>
 
-                <div class="categoria-box">
-                    <input type="checkbox" name="categoria_interes" value="resp_electro" id="electro">
-                    <input type="checkbox" name="categoria_interes" value="resp_moda" id="moda">
-                    <input type="checkbox" name="categoria_interes" value="resp_hogar" id="hogar">
-                    <input type="checkbox" name="categoria_interes" value="resp_jugueteria" id="jugueteria">
-                    <input type="checkbox" name="categoria_interes" value="resp_vida_sana" id="vida_sana">
+                    <div class="categoria-box">
+                        <input type="checkbox" name="categoria_interes" value="resp_electro" id="electro">
+                        <input type="checkbox" name="categoria_interes" value="resp_moda" id="moda">
+                        <input type="checkbox" name="categoria_interes" value="resp_hogar" id="hogar">
+                        <input type="checkbox" name="categoria_interes" value="resp_jugueteria" id="jugueteria">
+                        <input type="checkbox" name="categoria_interes" value="resp_vida_sana" id="vida_sana">
+                    </div>
                 </div>
 
             
