@@ -247,6 +247,16 @@ footer {
 }
 
 
+/* REGISTER */
+
+.register-form label {
+    visibility: hidden;
+}
+
+#show-label{
+    visibility: visible;
+}
+
 
 
 @media (min-width: 361px){
