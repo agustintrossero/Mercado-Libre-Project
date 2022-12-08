@@ -218,10 +218,10 @@ p.descripcion-footer{
     font-size: 12px;
 }
 
-
 footer {
     background-color: white;
 }
+
 .secciones-footer-container{
     text-align: center;
     padding: 40px;
@@ -491,5 +491,15 @@ h4{
 
     .login-form{
         padding: 60px;
+    }
+
+    .secciones-footer-container{
+        display: flex;
+    }
+
+    .icono-footer :hover{
+        color:#4279c5;
+        transition-duration: 1.5s;
+        
     }
 }
