@@ -333,13 +333,57 @@ h4{
     background-color: #2968c8;
     border: transparent;
     color: #fff;
-    
+    border-radius: 5px;    
 }
 
 .reset-button{
     margin-top: 20px;
 }
 
+
+/* LOGIN */
+
+.login-form-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form{
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-form input{
+    width: 80%;
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 1.8125em 0.75em;
+    padding-top: 0.8125em;
+    padding-right: 0.75em;
+    padding-bottom: 0.8125em;
+    padding-left: 0.75em;
+    border-radius: 5px;
+    border: solid 1px darkgrey;
+}
+
+.ingresar-button{
+    margin-top: 20px;
+}
 
 @media (min-width: 361px){
 
@@ -407,9 +451,26 @@ h4{
     }
 
     .register-form{
-        
         justify-content: center;
         width: 500px;
+    }
+
+    /*QUERY LOGIN*/
+
+    .login-form-container{
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .login-form{
+        justify-content: center;
+        width: 500px;
+    }
+    
+    .login-form .buttons-form button{
+        padding: 10px 125px;
     }
 
 }
@@ -425,6 +486,10 @@ h4{
     }
 
     .register-form{
+        padding: 60px;
+    }
+
+    .login-form{
         padding: 60px;
     }
 }
