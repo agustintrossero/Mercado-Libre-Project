@@ -333,11 +333,14 @@ h4{
     background-color: #2968c8;
     border: transparent;
     color: #fff;
-    border-radius: 5px;    
+    border-radius: 5px;
+    cursor: pointer;    
 }
 
-.reset-button{
+#reset-button{
     margin-top: 20px;
+    background-color: #d70000;
+    cursor: pointer;
 }
 
 
@@ -501,5 +504,16 @@ h4{
         color:#4279c5;
         transition-duration: 1.5s;
         
+    }
+
+    main .secciones-container .producto-container .camion i:hover{
+        transform: rotate(-90deg);
+        transition-duration: 450ms
+    }
+
+    .login-form button , #submit:hover{
+        background-color: #0022AA;
+        color:white;
+        cursor: pointer;
     }
 }
