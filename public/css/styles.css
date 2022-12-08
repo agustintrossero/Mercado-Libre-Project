@@ -282,6 +282,8 @@ footer {
     padding-right: 0.75em;
     padding-bottom: 0.8125em;
     padding-left: 0.75em;
+    border-radius: 5px;
+    border: solid 1px darkgrey;
 }
 
 .categoria_intereses{
@@ -331,6 +333,7 @@ h4{
     background-color: #2968c8;
     border: transparent;
     color: #fff;
+    
 }
 
 .reset-button{
@@ -395,6 +398,20 @@ h4{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+    /*QUERY REGISTER*/
+
+    .register-form-container{
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .register-form{
+        
+        justify-content: center;
+        width: 500px;
+    }
+
 }
 
 @media (min-width: 769px){
@@ -405,5 +422,9 @@ h4{
 
     .cuotas {
         font-size: 12px;
+    }
+
+    .register-form{
+        padding: 60px;
     }
 }
