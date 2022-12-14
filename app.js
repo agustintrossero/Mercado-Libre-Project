@@ -11,10 +11,11 @@ app.set("view engine", "ejs")
 
 const mainRouter = require("./routes/mainRouter")
 const userRouter = require("./routes/userRouter")
+const productRouter = require("./routes/productRouter")
 
 app.use(mainRouter)
 app.use(userRouter)
-
+app.use(productRouter)
 
 
 /*

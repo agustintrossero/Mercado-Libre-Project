@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head')%>
+<body>
+    <%- include('partials/headerNavbar')%>
+        <main>
+            <div class="secciones-container">
+                <div class="seccion-ultimaVisita-container">
+                    <div class="titulo-seccion-container">
+                        <h3 class="titulo-seccion">Totos los productos</h3>
+                    </div>
+                    <section class="UltimaVisita">
+
+                        <% for (let i=0; i<products.length; i++){ %> 
+                        <div class="producto-container">
+                            <div class="img-producto-container">
+                                <img class="img-producto" src="/img/products/<%= products[i].image %>" alt="<%= products[i].name %>">
+                            
+                            
+                            <div class="info-producto-container">
+                                <div class="camion">
+                                    <i class="fa-solid fa-truck"></i>
+                                </div>
+                                <section class="precioYdescuento">
+                                    <div class="precio-producto-container">
+                                        <p class="precio-producto"> $<%= products[i].price %></p>
+                                    </div>
+                                    <div class="descuento-producto-container">
+                                        <p class="descuento-producto"><%= products[i].discount %>% OFF</p>
+                                    </div>
+                                </section>
+                                <div class="descripcion-producto-container">
+                                    <strong class="descripcion-producto"><%= products[i].name %></strong>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <% } %> 
+                    </section>
+                </div>
+             </div>
+        </main>
+        <%- include('partials/footer')%>
+</body>
+</html>
