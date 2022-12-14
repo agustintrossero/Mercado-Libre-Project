@@ -8,16 +8,24 @@ app.use(express.static('public'));
 
 app.set("view engine", "ejs")
 
-const mainRouter = require("./routes/mainRouter")
 
-app.use("/", mainRouter)
+const mainRouter = require("./routes/mainRouter")
+const userRouter = require("./routes/userRouter")
+
+app.use(mainRouter)
+app.use(userRouter)
+
+
+
 /*
-app.get('/', (req, res)=> {
-    res.sendFile(path.join(__dirname, '/views/home.html'))
-})
 app.get('/register', (req, res)=> {
     res.sendFile(path.join(__dirname, '/views/register.html'))
 })
+
+app.get('/', (req, res)=> {
+    res.sendFile(path.join(__dirname, '/views/home.html'))
+})
+
 app.get('/login', (req, res)=> {
     res.sendFile(path.join(__dirname, '/views/login.html'))
 })
