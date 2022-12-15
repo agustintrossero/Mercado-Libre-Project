@@ -7,6 +7,10 @@ const products = JSON.parse(fs.readFileSync(productsPath, "utf-8"))
 const productController = {
     allProducts: (req,res) =>{
         res.render("products", {products})
+    },
+
+    create: (req,res) =>{
+        res.render("product-create-form")
     }
 }
 
