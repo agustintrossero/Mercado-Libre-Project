@@ -12,10 +12,13 @@
                     <section class="UltimaVisita">
 
                         <% for (let i=0; i<products.length; i++){ %> 
-                        <div class="producto-container">
-                            <div class="img-producto-container">
-                                <img class="img-producto" src="/img/products/<%= products[i].image %>" alt="<%= products[i].name %>">
                             
+                        <div class="producto-container">
+                            
+                            <div class="img-producto-container">
+                                <a href="/products/detail/:id">
+                                    <img class="img-producto" src="/img/products/<%= products[i].image %>" alt="<%= products[i].name %>">
+                                </a>
                             
                             <div class="info-producto-container">
                                 <div class="camion">

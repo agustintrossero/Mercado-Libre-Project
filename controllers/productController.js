@@ -9,6 +9,12 @@ const productController = {
         res.render("products", {products})
     },
 
+	detail: (req, res) => {
+		
+		let idProducto = req.params.id;
+		res.render('product-detail',{"productoSeleccionado": products[idProducto-1]});
+	},
+
     create: (req,res) =>{
         res.render("product-create-form")
     }
