@@ -3,7 +3,8 @@
 	<%- include('partials/head', {title: productSelected.name}) %>
     <body>
         <%- include('partials/headerNavbar')%>
-    <div class="container products-wrapper">
+	<main>
+    	<div class="container products-wrapper">
    
 		<div class="row">
 			<div class="col-12">
@@ -23,15 +24,15 @@
 						<h2 class="product-detail-title"><%= productSelected.name %></h2>
 						
 							<p class="product-detail-price small">
-								<span>$<%= productSelected.price %></span> /*precio sin descuento*/
+								<span>$<%= productSelected.price %></span> <!--precio sin descuento-->
 								/
 								<b><%= productSelected.discount %>% OFF</b>
 							</p>
 							<p class="product-detail-price">
-								<%= "-$"+((productSelected.discount / 100) * productSelected.price) %> /*cuanto se le descuenta*/
-							</p>
+								<%= "-$"+((productSelected.discount / 100) * productSelected.price) %> <!--cuanto se le descuenta-->
+								</p>
 							<p class="product-detail-price">
-								$<%= productSelected.price - ((productSelected.discount / 100) * productSelected.price) %> /*precio final*/
+								$<%= productSelected.price - ((productSelected.discount / 100) * productSelected.price) %> <!--precio final-->
 							</p>
 
 						<ul class="actions-list">
@@ -48,7 +49,7 @@
 						<a href="#" class="buy-now-button">COMPRAR AHORA</a>
 						<hr>
 
-						<a href="/products/edit/¿?" class="action-button edit">EDITAR PRODUCTO</a>
+						<a href="/products/edit/" class="action-button edit">EDITAR PRODUCTO</a>
 						<form action="/products/delete/¿¿" method="POST" style="display: inline-flex">
 							<button type="submit" class="action-button delete">ELIMINAR</button>
 						</form>
@@ -56,7 +57,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-    
+		</div>
+	</main>
 </body>
 </html>
