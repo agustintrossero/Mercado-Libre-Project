@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('partials/head')%>
+    <%- include('partials/head', {title: 'Todos los productos'}) %>
 <body>
     <%- include('partials/headerNavbar')%>
         <main>
@@ -16,7 +16,7 @@
                         <div class="producto-container">
                             
                             <div class="img-producto-container">
-                                <a href="/products/detail/:id">
+                                <a href="/products/detail/<%= products[i].id %>">
                                     <img class="img-producto" src="/img/products/<%= products[i].image %>" alt="<%= products[i].name %>">
                                 </a>
                             

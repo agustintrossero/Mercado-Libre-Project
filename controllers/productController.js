@@ -11,8 +11,9 @@ const productController = {
 
 	detail: (req, res) => {
 		
-		let idProducto = req.params.id;
-		res.render('product-detail',{"productoSeleccionado": products[idProducto-1]});
+		let idProducto = req.params.id
+		res.render('product-detail', {"productSelected": products[idProducto-1]});
+        console.log(idProducto)
 	},
 
     create: (req,res) =>{

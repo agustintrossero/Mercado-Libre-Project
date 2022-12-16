@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('partials/head')%>
+	<%- include('partials/head', {title: productSelected.name}) %>
     <body>
         <%- include('partials/headerNavbar')%>
     <div class="container products-wrapper">
    
 		<div class="row">
 			<div class="col-12">
-				<h2 class="products-title">Detalle del producto:</h2>
+				<h2 class="products-title">Detalle del producto: <%= productSelected.name %></h2>
 			</div>
 		</div>
 		<div class="product-detail">
 			<div class="row">
 				<div class="col-12 col-lg-8">
-					<img src="/img/products/" alt="product image" class="product-detail-img">
+					<img src="/img/products/<%= productSelected.image %>" alt=<%= productSelected.name %> class="product-detail-img">
 					<p class="product-detail-description">
-						PRODUCT DESCRIPTION
+						<%= productSelected.description %>
 					</p>
 				</div>
 				<div class="col-12 col-lg-4">
 					<article class="product-detail-info">
-						<h2 class="product-detail-title">PRODUCT NAME</h2>
+						<h2 class="product-detail-title"><%= productSelected.name %></h2>
 						
 							<p class="product-detail-price small">
-								<span>$PRICE</span>
+								<span>$<%= productSelected.price %></span> /*precio sin descuento*/
 								/
-								<b>DISCOUNT% OFF</b>
+								<b><%= productSelected.discount %>% OFF</b>
 							</p>
 							<p class="product-detail-price">
-								$FINAL PRICE
+								<%= "-$"+((productSelected.discount / 100) * productSelected.price) %> /*cuanto se le descuenta*/
 							</p>
 							<p class="product-detail-price">
-								$PRICE
+								$<%= productSelected.price - ((productSelected.discount / 100) * productSelected.price) %> /*precio final*/
 							</p>
 
 						<ul class="actions-list">
