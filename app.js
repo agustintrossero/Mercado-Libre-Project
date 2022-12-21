@@ -1,6 +1,8 @@
 const express = require('express')
 const path = require('path')
 const app = express()
+const methodOverride = require("method-override")
+
 
 
 app.listen(3000, () => console.log("Sitio funcionando en puerto 3000"))
@@ -10,6 +12,7 @@ app.set("view engine", "ejs")
 
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
+app.use(methodOverride("_method"))
 
 const mainRouter = require("./routes/mainRouter")
 const userRouter = require("./routes/userRouter")
