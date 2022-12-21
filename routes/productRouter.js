@@ -9,5 +9,6 @@ router.get("/products/create/", productController.create)
 router.post("/products", productController.store)
 
 router.get("/products/detail/:id", productController.detail)
+router.get("/products/edit/:id" ,productController.edit)
 
 module.exports = router

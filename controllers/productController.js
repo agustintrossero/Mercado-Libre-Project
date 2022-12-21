@@ -24,6 +24,10 @@ const productController = {
         let info = req.body.name
         console.log(info)
         res.redirect("/products")
+    },
+
+    edit: (req,res) =>{
+        res.render("product-edit-form")
     }
 }
 

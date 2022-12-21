@@ -11,37 +11,37 @@
 	<div class="banner"></div>
 	<!-- /Banner -->
 
-	<!-- todos los productos -->
-	
-	<div class="producto-container">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Resultados de la búsqueda: <%=searchResult.name%></h2>
+
+<!-- todos los productos -->
+<div class="container products-wrapper">
+	<div class="row">
+		<div class="col-12">
+			<h2 class="products-title">Resultados de la búsqueda: <%=searchResult.name%></h2>
+		</div>
+		<main>
+			<div class="col-12 col-sm-6 col-lg-3">
+				<section class="product-box product-container">
+					<a href="/products/detail/<%=searchResult.id%>">
+						<figure class="product-box_image">
+							<img src="/img/products/<%=searchResult.image%>" alt="imagen de producto">
+						</figure>
+						<article class="product-box_data">
+							<h2>$<%=searchResult.price%></h2>
+							<span><%=searchResult.discount%>% OFF</span>
+							<p><%=searchResult.name%></p>
+							<i class="fas fa-truck"></i>
+						</article>
+					</a>
+				</section>
 			</div>
-			<main>
-				<div class="col-12 col-sm-6 col-lg-3">
-					<section class="product-box">
-						<a href="/products/detail/<%=searchResult.id%>">
-							<figure class="img-producto-container">
-								<img src="/img/products/<%=searchResult.image%>" alt="imagen de producto" class="img-producto">
-							</figure>
-							<article class="info-producto-container">
-								<h2 class="precio-producto">$<%=searchResult.price%></h2>
-								<span class="descuento-producto"><%=searchResult.discount%>% OFF</span>
-								<p class="descripcion-producto"><%=searchResult.name%></p>
-								<i class="fas fa-truck camion" ></i>
-							</article>
-						</a>
-					</section>
-				</div>
-			</main>
-			<div class="col-12">
-				<h2 class="products-title" style="color: tomato;">No hay productos que coincidan con esa búsqueda</h2>
-			</div>
+		</main>
+
+		<div class="col-12">
+			<h2 class="products-title" style="color: tomato;">No hay productos que coincidan con esa búsqueda</h2>
 		</div>
 	</div>
-
-	<!-- /todos los productos -->
+</div>
+<!-- /todos los productos -->
 
 	<!-- footer -->
 	<%- include('partials/footer') %>

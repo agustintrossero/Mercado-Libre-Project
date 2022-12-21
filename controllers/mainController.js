@@ -11,7 +11,9 @@ const mainController = {
 
     search: (req,res) =>{
 
-        let busqueda = req.query.searchBar
+       // res.render("results", {"searchResult": products})
+       
+       let busqueda = req.query.searchBar
        // console.log(busqueda)
         for( i=0; i<products.length; i++){
             if(products[i].name.includes(busqueda)){
@@ -19,7 +21,9 @@ const mainController = {
              //   console.log(products[i])
             }
         }
+        
     }
+   
 }
 
 module.exports = mainController
