@@ -9,23 +9,23 @@
                 <div class="top-create-form">
                     <div class="input-container">
                         <label for="product-name" id="create-form-label">Nombre del producto:</label>
-                        <input type="text" name="nombre-producto" id="product-name" placeholder="Ej: Zapatillas Reebok" class="create-form-input">
+                        <input type="text" name="name" id="product-name" placeholder="Ej: Zapatillas Reebok" class="create-form-input">
                     </div>  
                     <div class="input-container">   
                         <label for="price" id="create-form-label">Precio del producto:</label>
-                        <input type="text" name="precio" id="price" placeholder="Ej: 5678" class="create-form-input">
+                        <input type="text" name="price" id="price" placeholder="Ej: 5678" class="create-form-input">
                     </div> 
                     <div class="input-container">
                         <label for="discount" id="create-form-label">Descuento:</label>
-                        <input type="text" name="descuento" id="discount" placeholder="Ej: 15" class="create-form-input">
+                        <input type="text" name="discount" id="discount" placeholder="Ej: 15" class="create-form-input">
                     </div>
                     <div class="input-container">
                         <label for="category"
                         id="create-form-label">Categoria:</label>
-                        <select name="categoria" id="category" class="create-form-input">
+                        <select name="category" id="category" class="create-form-input">
                             <option value="">Elegí</option>
-                                <option value="in-sale">En oferta</option>
-                                <option value="visited">Últimos agregados</option>
+                            <option value="in-sale">En oferta</option>
+                            <option value="visited">Últimos agregados</option>
                         </select>
                     </div>
                     <br>
@@ -33,9 +33,14 @@
 						<label for="create-description" id="create-form-label">Descipción:</label>
 						<textarea name="description" id="create-description" class="create-form-input"></textarea>
 					</div>
+                    <div class="input-container">
+                        <label for="image-file" id="create-form-label">Imagen de producto:</label>
+                        <input type="file" name="image" accept=".png">
+                    </div>	
                     <div id="textarea-container">
 						<button type="submit" class="buy-now-button">Guardar producto</button>	
-                    </div>	
+                    </div>
+
                 </div>
 
             </form>

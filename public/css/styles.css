@@ -64,6 +64,7 @@ header {
     right:19px;
     border:none;
     background-color: white;
+    cursor: pointer;
 }
 
 .banner {

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Resultados de tu búsqueda'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+	
+	<!-- Banner -->
+	<div class="banner"></div>
+	<!-- /Banner -->
+
+	<!-- todos los productos -->
+	
+	<div class="producto-container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Resultados de la búsqueda: <%=searchResult.name%></h2>
+			</div>
+			<main>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<section class="product-box">
+						<a href="/products/detail/<%=searchResult.id%>">
+							<figure class="img-producto-container">
+								<img src="/img/products/<%=searchResult.image%>" alt="imagen de producto" class="img-producto">
+							</figure>
+							<article class="info-producto-container">
+								<h2 class="precio-producto">$<%=searchResult.price%></h2>
+								<span class="descuento-producto"><%=searchResult.discount%>% OFF</span>
+								<p class="descripcion-producto"><%=searchResult.name%></p>
+								<i class="fas fa-truck camion" ></i>
+							</article>
+						</a>
+					</section>
+				</div>
+			</main>
+			<div class="col-12">
+				<h2 class="products-title" style="color: tomato;">No hay productos que coincidan con esa búsqueda</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>
