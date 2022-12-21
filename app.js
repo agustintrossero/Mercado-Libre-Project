@@ -8,6 +8,8 @@ app.use(express.static('public'));
 
 app.set("view engine", "ejs")
 
+app.use(express.urlencoded({extended:false}))
+app.use(express.json())
 
 const mainRouter = require("./routes/mainRouter")
 const userRouter = require("./routes/userRouter")

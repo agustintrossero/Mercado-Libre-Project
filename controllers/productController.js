@@ -18,6 +18,12 @@ const productController = {
 
     create: (req,res) =>{
         res.render("product-create-form")
+    },
+
+    store: (req,res) =>{
+        let info = req.body.name
+        console.log(info)
+        res.redirect("/products")
     }
 }
 
