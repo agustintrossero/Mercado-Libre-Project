@@ -13,7 +13,7 @@ const productController = {
 		
 		let idProducto = req.params.id
 		res.render('product-detail', {"productSelected": products[idProducto-1]});
-        console.log(idProducto)
+      //  console.log(idProducto)
 	},
 
     create: (req,res) =>{
@@ -28,6 +28,12 @@ const productController = {
 
     edit: (req,res) =>{
         res.render("product-edit-form")
+    },
+
+    productEdited: (req,res) =>{
+        let editedInfo = req.body
+        console.log (editedInfo)
+        res.redirect("/products")
     }
 }
 

@@ -11,4 +11,6 @@ router.post("/products", productController.store)
 router.get("/products/detail/:id", productController.detail)
 router.get("/products/edit/:id" ,productController.edit)
 
+router.put("/products/", productController.productEdited)
+
 module.exports = router
