@@ -21,13 +21,16 @@ const productController = {
     },
 
     store: (req,res) =>{
-        let info = req.body.name
+        let info = req.body
         console.log(info)
         res.redirect("/products")
     },
 
     edit: (req,res) =>{
-        res.render("product-edit-form")
+        let idProduct = req.params.id
+        let productToEdit = products[idProduct-1]
+        res.render("product-edit-form", {"productToEdit": productToEdit})
+      
     },
 
     productEdited: (req,res) =>{

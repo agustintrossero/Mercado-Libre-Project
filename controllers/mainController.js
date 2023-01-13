@@ -13,14 +13,14 @@ const mainController = {
 
        // res.render("results", {"searchResult": products})
        
-       let busqueda = req.query.searchBar
+       let busqueda = req.query.searchBar.toLowerCase()
        // console.log(busqueda)
         for( i=0; i<products.length; i++){
-            if(products[i].name.includes(busqueda)){
+            if(products[i].name.toLowerCase().includes(busqueda)){
                 res.render("results", {"searchResult": products[i]})
-             //   console.log(products[i])
             }
         }
+        console.log(busqueda)
         
     }
    
